@@ -8,7 +8,7 @@
 
 | 2 | Koustav Saha | Project Co-Leader | Overall coordination, task allocation and supervision |
 
-| 2 | Aryaraj Chakroborty | Core Backend Structure Head | C backend structure and module integration |
+| 2 | Aryaraj Chakraborty | Core Backend Structure Head | C backend structure and module integration |
 
 | 3 | Abhitram Basu | Front-End Designer Head | HTML interface, navigation and forms |
 
