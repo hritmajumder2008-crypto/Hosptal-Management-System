@@ -20,7 +20,7 @@
 
 | 7 | Sahana Ray | Data Management | Data organization and record management |
 
-| 8 | Ranit Kundu |  PPT Demonstrator | Project demonstration |
+| 8 | Ranit Kundu |  PPD Demonstrator | Project demonstration |
 
 | 8 |Suhridmoy Mallick | Report and Documentation | Preparation and  Documentation of Project |
 
