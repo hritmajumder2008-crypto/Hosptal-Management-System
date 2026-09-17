@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Hospital homepage</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Homepage</h1>
+        <nav>
+            <ul>
+                <button>
+                    <li><a href="patient.reg">Patient</a></li>
+                </button>
+                <br>
+                <button>
+                    <li><a href="appointment.book">Appointment</a></li>
+                </button>
+                <br>
+                <button>
+                   <li><a href="billing.calc">Billing</a></li>
+                </button><br>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Our hospital is a trusted healthcare facility providing expert medical care, advanced treatments, and compassionate support for patients. Equipped with modern technology and skilled professionals, it ensures quality care for both emergencies and long-term recovery.</p>
+    </main>
+</body>
+</html>
