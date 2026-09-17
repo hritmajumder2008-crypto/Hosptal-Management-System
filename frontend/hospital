@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hospital Management System </title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+        <h1>Hospital Management System
+            <style>
+                {font-size: 34px;}
+            </style>
+        </h1>
+        <h2>Welcome Staff!</h2>
+        <a href="patient.html">
+            <button>Patient Management
+            </button>
+        </a>
+        <br>
+        <a href="appointment.html">
+            <button>Appointment Management 
+            </button>
+        </a>
+        <br>
+        <a href="billing.html">
+            <button>Billing Management
+            </button>
+        </a>
+        <br>
+</body>
+</html>
