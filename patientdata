@@ -1,0 +1,80 @@
+#include <stdio.h>
+struct Patient
+{
+ int patientID;
+ char name[50];
+ int age;
+ char gender[10];
+ char contact[15];
+};
+struct Appointment
+{
+ int appointmentID;
+ int patientID;
+ char doctor[50];
+ char date[20];
+ char time[10];
+};
+struct Bill
+{
+ int billID;
+ int patientID;
+ float consultationFee;
+ float serviceCharges;
+ float medicineCharges; float total;
+};
+int main()
+{
+ struct Patient p;
+ struct Appointment a;
+ struct Bill b;
+ printf("Enter Patient ID: ");
+ scanf("%d", &p.patientID);
+ printf("Enter Patient Name: ");
+ scanf(" %[^\n]", p.name);
+ printf("Enter Age: ");
+ scanf("%d", &p.age);
+ printf("Enter Gender: ");
+ scanf("%s", p.gender);
+ printf("Enter Contact: ");
+ scanf("%s", p.contact);
+ printf("\nEnter Appointment ID: ");
+ scanf("%d", &a.appointmentID); a.patientID = p.patientID;
+ printf("Enter Doctor Name: ");
+ scanf(" %[^\n]", a.doctor);
+ printf("Enter Date: ");
+ scanf("%s", a.date);
+ printf("Enter Time: ");
+ scanf("%s", a.time);
+ printf("\nEnter Bill ID: ");
+ scanf("%d", &b.billID);
+ b.patientID = p.patientID;
+ printf("Enter Consultation Fee: ");
+ scanf("%f", &b.consultationFee);
+ printf("Enter Service Charges: ");
+ scanf("%f", &b.serviceCharges);
+ printf("Enter Medicine Charges: ");
+ scanf("%f", &b.medicineCharges); b.total = b.consultationFee +
+ b.serviceCharges +
+ b.medicineCharges;
+ printf("\n========== PATIENT DETAILS ==========\n");
+ printf("Patient ID : %d\n", p.patientID);
+ printf("Name : %s\n", p.name);
+ printf("Age : %d\n", p.age);
+ printf("Gender : %s\n", p.gender);
+ printf("Contact : %s\n", p.contact);
+ printf("\n========== APPOINTMENT DETAILS ==========\n");
+ printf("Appointment ID : %d\n", a.appointmentID);
+ printf("Patient ID : %d\n", a.patientID);
+ printf("Doctor : %s\n", a.doctor);
+ printf("Date : %s\n", a.date);
+ printf("Time : %s\n", a.time);
+ 
+ printf("\n========== BILL DETAILS ==========\n");
+ printf("Bill ID : %d\n", b.billID);
+ printf("Patient ID : %d\n", b.patientID);
+ printf("Consultation Fee : %.2f\n", b.consultationFee);
+ printf("Service Charges : %.2f\n", b.serviceCharges);
+ printf("Medicine Charges : %.2f\n", b.medicineCharges);
+ printf("Total Bill : %.2f\n", b.total);
+return 0; }
