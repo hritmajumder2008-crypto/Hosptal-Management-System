@@ -8,7 +8,55 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            min-height: 100vh;<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            margin: 0;
+        }
+        .box {
+            text-align: center;
+            padding: 30px 40px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        .box h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Patient Registration</h1>
+        <form>
+            <label>Patient ID:</label>
+            <input type="number">
+            <br><br>
+            <label>Name:</label>
+            <input type="text">
+            <br><br>
+            <label>Age:</label>
+            <input type="number">
+            <br><br>
+            <label>Gender:</label>
+            <input type="text">
+            <br><br>
+            <label>Contact:</label>
+            <input type="text">
+            <br><br>
+            <button type="submit">Register Patient</button>
+        </form>
+    </div>
+</body>
+</html>
             margin: 0;
         }
         form {
