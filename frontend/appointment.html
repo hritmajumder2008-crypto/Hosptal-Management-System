@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Appointment Management</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        form {
+            text-align: center;
+            padding: 30px 40px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
-
 <body>
-
     <h1>Appointment Management</h1>
 
     <form>
-
         <label>Appointment ID:</label>
         <input type="number">
         <br><br>
@@ -24,11 +38,11 @@
         <br><br>
 
         <label>Date:</label>
-        <input type="text">
+        <input type="date">
         <br><br>
 
         <label>Time:</label>
-        <input type="text">
+        <input type="time">
         <br><br>
 
         <button type="submit">Book Appointment</button>
